@@ -17,19 +17,13 @@ public class Practice02Demo {
 	public static void main(String[] args) {
 		
 		//实例化A类型的机器人
-		ARoboot a1 = new ARoboot();
-		a1.setName("索尼");
-		a1.setModel("007");
-		a1.walk();
+		ISpeakable a1 = new ARoboot("索尼","007");
 		a1.speak();
 		
 		System.out.println();
 		
 		//实例化B类型的机器人
-		BRoboot a2 = new BRoboot();
-		a2.setName("索尼02");
-		a2.setModel("008");
-		a2.walk();
+		ISeeable a2 = new BRoboot("索尼02","008");
 		a2.see();
 		
 		System.out.println();

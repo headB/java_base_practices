@@ -5,6 +5,8 @@ public class Seater implements IMannedable {
 	//是个交通工具都是有牌子的.
 	private String brand;
 	
+	public String name = "six six six!";
+	
 	//作为一个工具,我必须有一个赚钱的技能,比如说的士是靠行驶,飞机是靠飞行,船是靠航行.
 	//输入一个对象,去判断,这里准备实现大家差异性的方法.
 

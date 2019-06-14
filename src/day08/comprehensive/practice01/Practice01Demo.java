@@ -1,5 +1,15 @@
 package day08.comprehensive.practice01;
 
+//要求:
+//1、分析上面信息，代码化(用到知识点:
+//1、this 
+//2、super 
+//3、javabean 
+//4、继承)。 
+//
+//2、写测试类 Test 测试
+//3、添加一定的剧情(随意发挥)。
+
 public class Practice01Demo {
 
 	public static void main(String[] args) {
@@ -23,8 +33,9 @@ public class Practice01Demo {
 		System.out.println(p2);
 		
 		
-		
-		
+		//这里利用构造器就完成成员变量的初始化.
+		Monkey m1 = new Monkey("六小龄童",70,"金刚棒","紧箍咒");
+		System.out.println(m1);
 		
 		
 		

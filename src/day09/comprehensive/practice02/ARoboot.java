@@ -2,6 +2,11 @@ package day09.comprehensive.practice02;
 
 public class ARoboot extends BaseRoboot implements ISpeakable {
 
+	public ARoboot(String name, String model) {
+		super(name, model);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void speak() {
 		// TODO Auto-generated method stub

@@ -12,6 +12,12 @@ public class BaseRoboot implements IBaseFunction {
 		
 	}
 	
+	public BaseRoboot(String name, String model) {
+		super();
+		this.name = name;
+		this.model = model;
+	}
+
 	@Override
 	public void walk() {
 		// TODO Auto-generated method stub

@@ -17,12 +17,52 @@ package day08.comprehensive.practice01;
 
 public class Prentice {
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + age;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((weapon == null) ? 0 : weapon.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Prentice other = (Prentice) obj;
+		if (age != other.age)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (weapon == null) {
+			if (other.weapon != null)
+				return false;
+		} else if (!weapon.equals(other.weapon))
+			return false;
+		return true;
+	}
+
 	private String name;
 	private int age;
 	private String weapon;
 	
 	public Prentice() {
 		
+	}
+	
+	public Prentice(String name,int age,String weapon) {
+		this.name = name;
+		this.age = age;
+		this.weapon = weapon;
 	}
 	
 	public void setName(String name) {
