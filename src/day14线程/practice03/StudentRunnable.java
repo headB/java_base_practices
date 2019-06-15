@@ -13,9 +13,12 @@ public class StudentRunnable implements Runnable {
 		// TODO Auto-generated method stub
 		
 		
-		for (int i = 1; i <= apple; i++) {
+		for (int i = 1; i <= 50; i++) {
 			//获取父类的名字,的方式相当独特
-			System.out.format("同学 %s  现在已经吃到了第%s 个苹果了.!\n",Thread.currentThread().getName() ,i);
+			if(apple>0) {
+				System.out.format("同学 %s  现在已经吃到了第%s 个苹果了.!\n",Thread.currentThread().getName() ,apple--);
+			}
+			
 		}
 		
 	}

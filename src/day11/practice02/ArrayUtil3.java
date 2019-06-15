@@ -2,7 +2,7 @@ package day11.practice02;
 
 public enum ArrayUtil3 {
 	
-	INSTANCE;
+	INSTANCE,MONDAY;
 	
 	public  void sort(int[] array) {
 		System.out.println("这里是对数组进行排序!");

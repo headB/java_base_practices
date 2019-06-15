@@ -16,9 +16,9 @@ public class StudentThread extends Thread {
 	public void run() {
 		
 		//设置循环去吃苹果,我觉得直接用while好像写的代码会更加少一点
-		for (int i = 1; i <=apple ; i++) {
+		for (int i = 1; i <=50 ; i++) {
 			
-			System.out.format("%s同学已经吃了编号为 %s 的苹果了!\n\n", super.getName(),i);
+			System.out.format("%s同学已经吃了编号为 %s 的苹果了!\n\n", super.getName(),apple--);
 			
 		}
 		

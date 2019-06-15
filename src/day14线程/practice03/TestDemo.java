@@ -27,9 +27,15 @@ public class TestDemo {
 //		需求：使用实现方式实现吃苹果案例（线程不安全）
 //		作业目的：巩固实现方式创建并启动线程
 		
-		new Thread(new StudentRunnable(),"林志颖").start();
-		new Thread(new StudentRunnable(),"周秀娜").start();
-		new Thread(new StudentRunnable(),"李思捷").start();
+		//这里一共只设置50个苹果
+		
+		//在这里,多线程的环境,设置了共享变量的先例了.!
+		
+		StudentRunnable s1 = new StudentRunnable();
+		
+		new Thread(s1,"林志颖").start();
+		new Thread(s1,"周秀娜").start();
+		new Thread(s1,"李思捷").start();
 		
 		
 

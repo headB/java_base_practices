@@ -28,6 +28,11 @@ public class TestDemo {
 		Object i = 7;
 		System.out.println(i);
 		
+		System.out.println(ArrayUtil3.INSTANCE.ordinal());
+		System.out.println(ArrayUtil3.MONDAY.ordinal());
+		
+		ArrayUtil3.MONDAY.sort(array1);
+		
 	}
 	
 

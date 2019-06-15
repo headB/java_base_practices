@@ -1,6 +1,6 @@
 package day11.practice01;
 
-public class ArrayUtil {
+public  class ArrayUtil {
 	
 	
 //	使用 static 方法的方式定义一个数组的工具类，并测试
@@ -32,10 +32,6 @@ public class ArrayUtil {
 			}
 			
 		}
-		
-		
-		
-		
 		
 	}
 	
