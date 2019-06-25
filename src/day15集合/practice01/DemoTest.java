@@ -185,6 +185,12 @@ public class DemoTest {
 			System.out.println("操作异常!");
 		}
 		
+		//我发神经,随便弄一下数组的复制,随便复习一下啦.!
+		
+		Integer[] players_1 = new Integer[size];
+		System.arraycopy(this.players, 0, players_1, 0, size);
+		System.out.println("数组的复制!");
+		System.out.println(Arrays.toString(players_1));
 	}
 	
 }

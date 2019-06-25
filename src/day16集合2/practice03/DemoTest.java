@@ -29,6 +29,8 @@ public class DemoTest {
 		System.out.println(set.contains("beetle1"));
 		System.out.println(set.size());
 		
+		
+		
 		set.remove("cctv");
 		
 		System.out.println("===========中间分界,心理变态================");
