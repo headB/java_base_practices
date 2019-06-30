@@ -17,7 +17,7 @@ public class DemoTest {
 		File f1 = new File("/Users/lizhixuan/Downloads/eatFruit.txt");
 		
 		FileReader fr1 = new FileReader(f1);
-		char[] c1 = new char[8];
+		char[] c1 = new char[2];
 		int i =0;
 //		int i = fr1.read(c1);
 //		
@@ -33,11 +33,11 @@ public class DemoTest {
 		while((i=fr1.read(c1))!=-1) {
 			
 			//然后读取,输出
-			System.out.println(c1);
+			System.out.print(c1);
 		}
 		System.out.println(fr1.read(c1));
 		
-		System.out.println("======输出剩下的字符!====");
+		System.out.print("======输出剩下的字符!====");
 		System.out.println(c1);
 		
 	}

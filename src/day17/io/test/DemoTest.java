@@ -23,6 +23,24 @@ public class DemoTest {
 		System.out.println(Arrays.toString(data));//[-23, -66, -103, -27, -109, -91] ret = new String(data,"UTF-8"); //--------------------------------------------- System.out.println(ret);//输出:龙哥
 		System.out.println(data);
 		System.out.println(new String(data,"UTF-8"));
+		
+		System.out.println("lizhixuan beetle".matches(".*beetle$"));
+		System.out.println("lizhixuan beetle".contains("beetle"));
+		int[] array = {1,2,56,76,32,100};
+		String s1 = "asdads";
+		System.out.println(s1.contains(""));
+		
+		String[] arr = {"蜀:关银屏","吴:大乔","魏:甄宓,蜀","蜀:黄月英"};
+		
+		//尝试一下分隔
+		for(String x:arr) {
+			
+			if(x.matches("蜀.*")) {
+				System.out.println(x);
+			}
+			
+		}
+		
 	}
 
 }

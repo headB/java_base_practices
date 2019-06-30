@@ -17,19 +17,20 @@ public class Expresses {
 	synchronized void popMail() {
 		int count = 0;
 		if(number>=1) {
-			System.out.println(Thread.currentThread().getName()+ " 派发-> "+number);
+//			System.out.println(Thread.currentThread().getName()+ " 派发-> "+number);
 			number--;
 			count++;
-			String s1 = Thread.currentThread().getName();
-			if(s1.equals("A")) {
-				a++;
-				
-			}else if (s1.equals("B")) {
-				b++;
-				
-			}else {
-				c++;
-			}
+			
+//			String s1 = Thread.currentThread().getName();
+//			if(s1.equals("A")) {
+//				a++;
+//				
+//			}else if (s1.equals("B")) {
+//				b++;
+//				
+//			}else {
+//				c++;
+//			}
 			
 			
 		}
