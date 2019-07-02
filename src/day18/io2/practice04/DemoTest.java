@@ -1,8 +1,11 @@
 package day18.io2.practice04;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.Date;
 
 //4. 作业四: 
 //需求:文件字符流完成拷贝操作
@@ -13,6 +16,10 @@ public class DemoTest {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
+		Date date = new Date();
+		
+		System.out.println(date.toLocaleString());
+		
 		//证实失败了,!二进制文件是不能使用FileWriter去操作的!.
 //		/Users/lizhixuan/Downloads/贺圣军-python大纲.xmind
 //		/Users/lizhixuan/Downloads/eatFruit.txt
@@ -20,8 +27,11 @@ public class DemoTest {
 		File f1 = new File("/Users/lizhixuan/Downloads/eatFruit.txt");
 		File f2 = new File("/Users/lizhixuan/Downloads/eatFruit.bak.txt");
 		
-		FileReader f3 = new FileReader(f1);
-		FileWriter f4 = new FileWriter(f2);
+		BufferedReader f3 = new BufferedReader(new FileReader(f1));
+		BufferedWriter f4 = new BufferedWriter(new FileWriter(f2));
+		
+		// FileReader f3 = new FileReader(f1);
+		// FileWriter f4 = new FileWriter(f2);
 		
 		//边读取,边copy
 		char[] charArray = new char[512];
@@ -38,7 +48,7 @@ public class DemoTest {
 		f4.close();
 		f3.close();
 		
-		
+		System.out.println(date.toLocaleString());
 		
 
 	}

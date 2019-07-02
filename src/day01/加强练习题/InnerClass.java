@@ -39,6 +39,12 @@ public  class InnerClass {
 
 }
 
+interface IUsb{
+	
+	void test();
+	
+}
+
 class Student{
 	
 	String name = "kumanxuan";
@@ -49,8 +55,19 @@ class Student{
 	//方法内部类.
 	void testMethod() {
 		
-		String name="kumamon";
+		String names="kumamon123";
 		
+		//匿名内部类
+		
+		IUsb u1 = new IUsb() {
+			
+			public void test(){
+//				System.out.println();
+				System.out.println("\n测试匿名内部类"+name+"\n");	
+			}
+		};
+		
+		u1.test();
 		
 		
 		class TestSix{
@@ -60,9 +77,16 @@ class Student{
 				System.out.println(name);
 			}
 			
+			//匿名内部类里面再写个方法.
+			public void test() {
+				
+				System.out.println("asd测试内部类的方法调用->"+names);
+				
+			}
+			
 		}
 		
-		new TestSix();
+		new TestSix().test();
 		
 	}
 	

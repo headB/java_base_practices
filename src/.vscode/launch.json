@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - DemoTest",
             "request": "launch",
+            "mainClass": "day18.io2.practice04.DemoTest",
+            "projectName": "src_e90dd21d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoTest",
+            "request": "launch",
             "mainClass": "day16集合2.comprehensive02.DemoTest",
             "projectName": "src_e90dd21d"
         },
