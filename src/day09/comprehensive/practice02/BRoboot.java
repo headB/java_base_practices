@@ -1,18 +1,17 @@
 package day09.comprehensive.practice02;
 
 public class BRoboot extends BaseRoboot implements ISeeable {
-
-	public BRoboot(String string, String string2) {
-		// TODO Auto-generated constructor stub
-		super(string,string2);
+	
+	public BRoboot(String name,String model) {
+		super(name,model);
 	}
-
+	
 	@Override
 	public void see() {
-		System.out.println("大家都是遵循 see,这个方法名,来完成功能的,然后实例化的时候可以调用 see()方法就可以实现识别方法!");
-		
+		// TODO Auto-generated method stub
+		System.out.format("机器人:%s, 型号:%s 我会头像识别!\n",super.getName(),super.getModel());
 	}
 
+	//B机器可以看见
 	
-
 }

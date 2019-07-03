@@ -17,27 +17,55 @@ public class Practice02Demo {
 	public static void main(String[] args) {
 		
 		//实例化A类型的机器人
-		ISpeakable a1 = new ARoboot("索尼","007");
+		ISpeakable a = new ARoboot("kumanxuan","007");
+		a.speak();
+		a.walk();
+		
+		
+		
+		System.out.println();
+		
+		
+		ISeeable b = new CRoboot("A","007");
+		b.see();
+		b.walk();
+		
+		System.out.println();
+//		
+		CRoboot c = new CRoboot("C","009");
+		c.speak();
+		c.see();
+		c.walk();
+		
+		System.out.println();
+		
+		ISpeakable a1 = new AllInRoboot("D","0100");
 		a1.speak();
+		a1.walk();
 		
-		System.out.println();
 		
-		//实例化B类型的机器人
-		ISeeable a2 = new BRoboot("索尼02","008");
-		a2.see();
 		
-		System.out.println();
 		
-		//实例化B类型的机器人
-		CRoboot a3 = new CRoboot();
-		a3.setName("索尼02");
-		a3.setModel("008");
-		a3.walk();
-		a3.see();
-		a3.speak();
+		
+		
+		
+		
+		
+//		//实例化B类型的机器人
+//		ISeeable a2 = new BRoboot("索尼02","008");
+//		a2.see();
+//		
+//		System.out.println();
+//		
+//		//实例化B类型的机器人
+//		CRoboot a3 = new CRoboot();
+//		a3.setName("索尼02");
+//		a3.setModel("008");
+//		a3.walk();
+//		a3.see();
+//		a3.speak();
 						
-				
-		
+	
 		
 		
 	}

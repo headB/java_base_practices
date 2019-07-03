@@ -5,6 +5,10 @@ import java.io.Serializable;
 public class User implements Serializable {
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private int age = 18;
 	private transient  String password;
@@ -17,6 +21,8 @@ public class User implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 	
 	public int getAge() {
 		return age;

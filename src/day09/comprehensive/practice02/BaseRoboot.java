@@ -1,6 +1,6 @@
 package day09.comprehensive.practice02;
 
-public class BaseRoboot implements IBaseFunction {
+public  class BaseRoboot{
 
 	
 	//名字
@@ -11,6 +11,7 @@ public class BaseRoboot implements IBaseFunction {
 	public BaseRoboot() {
 		
 	}
+
 	
 	public BaseRoboot(String name, String model) {
 		super();
@@ -18,11 +19,13 @@ public class BaseRoboot implements IBaseFunction {
 		this.model = model;
 	}
 
-	@Override
+	
 	public void walk() {
 		// TODO Auto-generated method stub
 		System.out.println("作为机器人,我们都是会走路的!!!还会跑路!!!");
 	}
+	
+	
 	
 	public void setName(String name) {
 		this.name = name;

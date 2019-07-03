@@ -1,12 +1,13 @@
 package day09.comprehensive.practice02;
 
-public class  CRoboot extends BaseRoboot implements ISpeakable,ISeeable {
+public class AllInRoboot extends BaseRoboot implements ISpeakable,ISeeable{
 
 	
-	public CRoboot(String name,String model) {
+	public AllInRoboot(String name,String model) {
+		// TODO Auto-generated constructor stub
 		super(name,model);
 	}
-
+	
 	@Override
 	public void see() {
 		// TODO Auto-generated method stub
@@ -18,10 +19,6 @@ public class  CRoboot extends BaseRoboot implements ISpeakable,ISeeable {
 		// TODO Auto-generated method stub
 		System.out.format("机器人:%s, 型号:%s 我会头像识别!\n",super.getName(),super.getModel());
 	}
-	
-	
-
-	//可以讲话和图形识别!
 	
 
 }
