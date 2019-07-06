@@ -34,3 +34,28 @@ abstract class Cat{
 	
 	
 }
+
+class Father{
+	
+	public int getNumber() {
+		
+		return 1;
+		
+	}
+	
+public String getNumber(int i) {
+		
+		return "1";
+		
+	}
+	
+}
+
+class Son extends Father{
+	
+	public String getNumber(int i) {
+		
+		return "123";
+	}
+	
+}
