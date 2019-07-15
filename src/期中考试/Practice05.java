@@ -11,12 +11,16 @@ public class Practice05 {
 	
 	
 	public static void main(String[] args) {
-		Student s1 = new Computer(99,98,89,76);
+		Computer s1 = new Computer(99,98,89,76);
+//		Student s1 = new Computer(99,98,89,76);
 		
 		
-		Student s2 = new English(85,95,90);
+//		Student s2 = new English(85,95,90);
+		English s2 = new English(85,95,90);
 		
-		Student s3 = new English(99,88,85);
+//		Student s3 = new English(99,88,85);
+		English s3 = new English(99,88,85);
+		
 		
 		System.out.println(s1.getSynthesize());
 		System.out.println(s2.getSynthesize());

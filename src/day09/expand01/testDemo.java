@@ -1,7 +1,5 @@
 package day09.expand01;
 
-import java.util.function.IntFunction;
-
 public class testDemo {
 	
 	

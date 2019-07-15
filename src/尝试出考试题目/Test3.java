@@ -105,7 +105,7 @@ public class Test3 {
 
 		}
 		
-		System.out.println("asd");
+		
 
 //		System.out.println("循环了这几次!");
 //		System.out.println(count);

@@ -24,7 +24,10 @@ public class Practice01Demo {
 		p1.setFormula("江华给我设定的紧箍咒");
 		p1.extDevil();
 		System.out.println(p1);
+		p1.printNames();
 		System.out.println();
+		
+		
 		
 		Monkey p2 = new Monkey();
 		p2.setName("陈浩民");

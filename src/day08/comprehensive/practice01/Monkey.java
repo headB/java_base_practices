@@ -3,11 +3,13 @@ package day08.comprehensive.practice01;
 //做大师兄,都有这个功能的!
 public class Monkey extends Prentice {
 	
+	private String name;
 
 	private String formula;
 	
 	
 	public Monkey() {
+		
 		super();
 			
 		}
@@ -20,6 +22,12 @@ public class Monkey extends Prentice {
 			
 			
 		}
+		
+	public void printNames() {
+		System.out.println(super.getName());
+	}
+		
+		
 	
 	public void setFormula(String formula) {
 		this.formula = formula;

@@ -1,6 +1,6 @@
 package day09.comprehensive.practice02;
 
-public class ARoboot  extends BaseRoboot implements ISpeakable {
+public class ARoboot  extends BaseRoboot implements ISpeakable,IWalkable {
 
 	public ARoboot(String name,String model) {
 		super(name,model);
