@@ -39,6 +39,8 @@ public class DemoTest {
 		for(Point<?> px:list) {
 			
 			System.out.println(px);
+			String s1 = "asd" +
+			"cctv";
 			
 		}
 		

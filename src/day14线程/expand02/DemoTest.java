@@ -16,6 +16,8 @@ public class DemoTest {
 		//公共资源类
 		Expresses e1 = new Expresses();
 		
+		
+		
 		Mailman m1 = new Mailman(e1);
 		
 		new Thread(m1,"A").start();

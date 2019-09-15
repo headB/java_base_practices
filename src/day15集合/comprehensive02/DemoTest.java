@@ -30,6 +30,8 @@ public class DemoTest {
 		Student s4 = new Student(30,"Jim",80,"class05");
 		Student s5 = new Student(24,"Kevin",100,"class04");
 		
+		Student[] stus = new Student[] {s1,s2,s3,s4,s5};
+		
 		List<Student> studList = new ArrayList<>();
 		
 		studList.add(s1);
